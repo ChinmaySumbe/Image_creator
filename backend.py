@@ -6,7 +6,7 @@ import io
 
 load_dotenv()
 
-API_KEY = st.secrets["HUGGINGFACE_API_KEY"]     # you can use os.getenv() for your local repository.
+API_KEY = os.getenv("HUGGINGFACE_API_KEY")     # you can use os.getenv() for your local repository.
 
 API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
 
